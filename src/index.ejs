@@ -16,7 +16,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/system/single-spa.min.js",
+        "rxjs": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js",
+        "@app/utility": "//localhost:8082/app-utility.js"
       }
     }
   </script>
@@ -37,8 +39,7 @@
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
         "@app/root-config": "//localhost:9000/app-root-config.js",
         "angular-app": "//localhost:8080/main.js",
-        "@react/react-remote": "//localhost:8081/react-react-remote.js",
-        "@react-app/react-app": "//localhost:8082/react-app-react-app.js"
+        "@app/react-remote": "//localhost:8081/app-react-remote.js"
       }
     }
   </script>
